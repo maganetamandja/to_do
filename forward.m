@@ -1,0 +1,1 @@
+#a forward layer takes in  input , sums it up and add the bias

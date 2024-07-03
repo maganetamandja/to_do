@@ -1,0 +1,19 @@
+
+help me understand this primal  perceptron algorithm: 
+
+Given a linearly separable training set S and learning rate N element of positive Reals
+
+W0 <- 0; b0 <- 0; k <- 0
+
+R <-max 1<=i<=l |X_i|
+
+repeat 
+    for i==1 to l
+        if yi([W_k*X_i] + b_k)<=0 then
+            W_k+1 <- W_k + N*y_i*X_i
+            b_k+1 <- b_k + N*y_i*R^2
+            k<-k+1
+        end if
+    end for
+until no mistakes made within the for loop
+return (wk, bk) where k is the number of mistakes.
